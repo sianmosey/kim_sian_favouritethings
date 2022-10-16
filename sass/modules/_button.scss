@@ -1,0 +1,32 @@
+#buttonContainer {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;      
+}
+
+#container {
+    display: flex;
+    // position: absolute;
+    justify-content: center;
+}
+
+#btn1:hover {
+    color: rgb(255, 0, 0);
+}
+
+#btn2:hover {
+    color: rgb(255, 0, 0);
+}
+
+#btn3:hover {
+    color: rgb(255, 0, 0);
+}
+
+#btn1,
+#btn2,
+#btn3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #80ff00;
+   transition: all 0.3s;
+}
