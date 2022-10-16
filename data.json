@@ -1,0 +1,20 @@
+{
+    "thing1": {
+        "title": "_listening_to_music_",
+        "banner": "_Music_that_relaxes_my_emotions_",
+        "brief": "Listening to music has a good effect on my emotions. Listening to songs when you are depressed makes you feel better, and listening to songs when you are in a good mood helps you feel and remember happy longer. As if a song heard on a particular day becomes an indelible memory in life.",
+        "photo": "music.jpg"
+    },
+    "thing2": {
+        "title": "_going_to_concerts_",
+        "banner": "_A_visually_and_audibly_beautiful_performance_",
+        "brief": "The reason why I like going to perform is because of the artist's live, stage direction, and audience. My heart beats when I see the audience enjoying the live performance of the artist and the stage with great production.",
+        "photo": "concerts.jpg"
+    },
+    "thing3": {
+        "title": "_sipping_wine_",
+        "banner": "_A_calm_and_comfortable_drink_",
+        "brief": "Among the wines, I like moscato d'asti the most. Unlike other alcohols, wine is good because it can be enjoyed comfortably and calmly, and above all, it tastes good.",
+        "photo": "moscato.jpg"
+    }
+}
