@@ -46,7 +46,7 @@
         fvrtthingImg.src = `images/${favpanel[key].photo}`;
         fvrtthingTitle.textContent = favpanel[key].title;
         //debugger;
-        fvrtthingSubTitle.textContent = favpanel[key].banner;
+        fvrtthingSubTitle.textContent = favpanel[key].title2;
         fvrtthingDesc.textContent = favpanel[key].brief;
 
     }
