@@ -4,7 +4,6 @@
     const button = document.querySelectorAll(".button");
     let favpanel;
 
-    // using get data and show data  and build using fetch API
 
     function buildData(data) {
         let favpanel = Object(data);
@@ -19,13 +18,9 @@
                 favpanel = data;
 
             })
-
-        // for catching the error
         .catch(error => console.error(error));
     }
-
-    //debugger;
-
+    
     function showData(event) {
 
         let key = event.target.dataset.list;
@@ -34,14 +29,10 @@
         buildData();
         console.log(favpanel);
 
-        // classifying json objects
-
         let fvrtthingTitle = document.querySelector("h2"),
             fvrtthingSubTitle = document.querySelector("h3"),
             fvrtthingDesc = document.querySelector("p"),
             fvrtthingImg = document.querySelector("img");
-
-        // debugger;
 
         fvrtthingImg.src = `images/${favpanel[key].photo}`;
         fvrtthingTitle.textContent = favpanel[key].title;
@@ -53,11 +44,6 @@
 
     getData();
 
-    // buttonContainer.addEventListener('click', showData),
-
-    // for button functionality
-
-
-    button.forEach(button => button.addEventListener("click", showData));
+   button.forEach(button => button.addEventListener("click", showData));
 
 })();
