@@ -29,16 +29,15 @@
         buildData();
         console.log(favpanel);
 
-        let fvrtthingTitle = document.querySelector("h2"),
-            fvrtthingSubTitle = document.querySelector("h3"),
-            fvrtthingDesc = document.querySelector("p"),
-            fvrtthingImg = document.querySelector("img");
+        let title = document.querySelector("h2"),
+            title2 = document.querySelector("h3"),
+            description = document.querySelector("p"),
+            image = document.querySelector("img");
 
-        fvrtthingImg.src = `images/${favpanel[key].photo}`;
-        fvrtthingTitle.textContent = favpanel[key].title;
-        //debugger;
-        fvrtthingSubTitle.textContent = favpanel[key].title2;
-        fvrtthingDesc.textContent = favpanel[key].brief;
+        image.src = `images/${favpanel[key].photo}`;
+        title.textContent = favpanel[key].title;
+        title2.textContent = favpanel[key].title2;
+        description.textContent = favpanel[key].brief;
 
     }
 
