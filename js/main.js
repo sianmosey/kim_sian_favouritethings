@@ -2,11 +2,11 @@
 
 
     const button = document.querySelectorAll(".button");
-    let favpanel;
+    let favparts;
 
 
     function buildData(data) {
-        let favpanel = Object(data);
+        let favparts = Object(data);
     }
 
 
@@ -15,7 +15,7 @@
             .then(res => res.json())
             .then(data => {
 
-                favpanel = data;
+                favparts = data;
 
             })
         .catch(error => console.error(error));
@@ -27,17 +27,17 @@
         console.log(key);
 
         buildData();
-        console.log(favpanel);
+        console.log(favparts);
 
         let title = document.querySelector("h2"),
             title2 = document.querySelector("h3"),
             description = document.querySelector("p"),
             image = document.querySelector("img");
 
-        image.src = `images/${favpanel[key].photo}`;
-        title.textContent = favpanel[key].title;
-        title2.textContent = favpanel[key].title2;
-        description.textContent = favpanel[key].brief;
+        image.src = `images/${favparts[key].photo}`;
+        title.textContent = favparts[key].title;
+        title2.textContent = favparts[key].title2;
+        description.textContent = favparts[key].brief;
 
     }
 
@@ -46,3 +46,4 @@
    button.forEach(button => button.addEventListener("click", showData));
 
 })();
+
