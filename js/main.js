@@ -23,8 +23,8 @@
     
     function showData(event) {
 
-        let key = event.target.dataset.list;
-        console.log(key);
+        let any = event.target.dataset.list;
+        console.log(any);
 
         buildData();
         console.log(favparts);
@@ -34,10 +34,10 @@
             description = document.querySelector("p"),
             image = document.querySelector("img");
 
-        image.src = `images/${favparts[key].photo}`;
-        title.textContent = favparts[key].title;
-        title2.textContent = favparts[key].title2;
-        description.textContent = favparts[key].brief;
+        image.src = `images/${favparts[any].photo}`;
+        title.textContent = favparts[any].title;
+        title2.textContent = favparts[any].title2;
+        description.textContent = favparts[any].brief;
 
     }
 
@@ -46,4 +46,3 @@
    button.forEach(button => button.addEventListener("click", showData));
 
 })();
-
