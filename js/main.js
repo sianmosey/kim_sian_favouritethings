@@ -23,8 +23,8 @@
     
     function showData(event) {
 
-        let any = event.target.dataset.list;
-        console.log(any);
+        let main = event.target.dataset.list;
+        console.log(main);
 
         buildData();
         console.log(favparts);
@@ -34,10 +34,10 @@
             description = document.querySelector("p"),
             image = document.querySelector("img");
 
-        image.src = `images/${favparts[any].photo}`;
-        title.textContent = favparts[any].title;
-        title2.textContent = favparts[any].title2;
-        description.textContent = favparts[any].brief;
+        image.src = `images/${favparts[main].photo}`;
+        title.textContent = favparts[main].title;
+        title2.textContent = favparts[main].title2;
+        description.textContent = favparts[main].brief;
 
     }
 
